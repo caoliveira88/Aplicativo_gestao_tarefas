@@ -35,3 +35,14 @@ const createItem = (nameList, status, descricao, index) => {
   document.getElementById('todoList').appendChild(item)
 }
 
+// Limpar
+const clearList = () => {
+  const todolist = document.getElementById('todoList')
+  while (todolist.firstChild) {
+    todolist.removeChild(todolist.lastChild)
+  }
+}
+
+
+
+
