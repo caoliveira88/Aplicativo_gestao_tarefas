@@ -43,6 +43,13 @@ const clearList = () => {
   }
 }
 
-
+// Atualizar
+const updateWindow = () => {
+  clearList()
+  const localStge = getLocal()
+  localStge.forEach((item, index) =>
+    createItem(item.nameList, item.status, item.descricao, index)
+  )
+}
 
 
