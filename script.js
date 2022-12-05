@@ -52,4 +52,21 @@ const updateWindow = () => {
   )
 }
 
+// Criar novo item
+const createNewItem = event => {
+  const key = event.key
+  if (key === 'Enter') {
+    const localStge = getLocal()
+    localStge.push({
+      nameList: event.target.value,
+      status: '',
+      descricao: ''
+    })
+
+    setLocal(localStge)
+    event.target.value = ''
+    updateWindow()
+  }
+}
+
 
