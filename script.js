@@ -69,4 +69,12 @@ const createNewItem = event => {
   }
 }
 
+// Remover item
+const removerItem = index => {
+  const localStge = getLocal()
+  localStge.splice(index, 1)
+  setLocal(localStge)
+  updateWindow()
+}
+
 
