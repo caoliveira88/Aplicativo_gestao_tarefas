@@ -93,4 +93,14 @@ const updadeItem = index => {
   updateWindow()
 }
 
+// Atualizar descrição
+const updadeDesc = index => {
+  const localStge = getLocal()
+  const desc = document.querySelectorAll('textarea')[index].value
+  console.log(desc)
+  localStge[index].descricao = desc
+
+  setLocal(localStge)
+  updateWindow()
+}
 
