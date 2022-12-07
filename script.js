@@ -77,4 +77,20 @@ const removerItem = index => {
   updateWindow()
 }
 
+// Atualizar item
+const updadeItem = index => {
+  const localStge = getLocal()
+  const classColor = document.querySelectorAll('.todo__item')[index]
+  localStge[index].status = localStge[index].status === '' ? 'checked' : ''
+  if (localStge[index].status === 'checked') {
+    classColor.classList.add('ativo')
+  } else {
+    localStge[index].status = ''
+    classColor.classList.remove('ativo')
+  }
+
+  setLocal(localStge)
+  updateWindow()
+}
+
 
