@@ -93,6 +93,7 @@ const updadeItem = index => {
   updateWindow()
 }
 
+<<<<<<< HEAD
 // Atualizar descrição
 const updadeDesc = index => {
   const localStge = getLocal()
@@ -103,4 +104,6 @@ const updadeDesc = index => {
   setLocal(localStge)
   updateWindow()
 }
+=======
+>>>>>>> 163d813e2c2a22f5204b8b870daea878b1885938
 
