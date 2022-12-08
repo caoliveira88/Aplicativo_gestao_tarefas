@@ -93,7 +93,6 @@ const updadeItem = index => {
   updateWindow()
 }
 
-<<<<<<< HEAD
 // Atualizar descrição
 const updadeDesc = index => {
   const localStge = getLocal()
@@ -104,6 +103,20 @@ const updadeDesc = index => {
   setLocal(localStge)
   updateWindow()
 }
-=======
->>>>>>> 163d813e2c2a22f5204b8b870daea878b1885938
 
+// Selecionar item
+const clickItem = event => {
+  const element = event.target
+  if (element.id === 'lixo') {
+    const index = element.dataset.index
+    removerItem(index)
+  } else if (element.id === 'teste') {
+    // const des = document.querySelector('.todo__item')
+    // des.classList.toggle('ativo')
+    const index = element.dataset.index
+    updadeItem(index)
+  } else if (element.id === 'buttonDesc') {
+    const index = element.dataset.index
+    updadeDesc(index)
+  }
+}
