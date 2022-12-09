@@ -120,3 +120,8 @@ const clickItem = event => {
     updadeDesc(index)
   }
 }
+
+// Evento 
+document.getElementById('newItem').addEventListener('keypress', createNewItem)
+document.getElementById('todoList').addEventListener('click', clickItem)
+updateWindow()
