@@ -1,10 +1,10 @@
-# ToDo_List
+# Aplicativo_gestao_tarefas
 
 Aplicativo para quem precisa de organização em suas tarefas diárias.
 
 ![Todo_List](todo-list-img.jpg)
 
-## Tecnologias, tecnicas e ferramentas utilizadas
+## Tool kit
  
 - ``HTML``
 - ``CSS``
