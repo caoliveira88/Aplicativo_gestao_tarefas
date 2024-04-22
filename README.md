@@ -10,4 +10,7 @@ Aplicativo para quem precisa de organização em suas tarefas diárias.
 - ``CSS``
 - ``JavaScript`` 
 - ``Armazenamento localStorage`` 
-- ``Responsividade`` 
+- ``Responsividade``
+
+## Deploy
+Aproveite para testar, acesse [Aplicativo Gestão de Tarefas](https://caoliveira88.github.io/Aplicativo_gestao_tarefas/) 
